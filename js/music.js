@@ -30,6 +30,11 @@ $('form').submit(function() {
 	musicItem.set('website', $("#website").val());
 	musicItem.set('song', $("#bestsong").val());
 
+	$(this).find('input').each(function () {
+		musicItem.set($(this).attr('id'), $(this).val());
+		$(this).val('');
+	});
+
 	// After setting each property, save your new instance back to your database
 	musicItem.save();
 	
