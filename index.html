@@ -8,6 +8,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		
         <!-- Include parse library here -->
+        <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
         
     </head>
     <body>
@@ -15,6 +16,23 @@
     		
             <!-- Here is where you should build your form.  
                 You can make it look nicer with bootstrap classes like "form-input" -->
+        <h1>Music to listen to</h1>
+        <form role="form">
+            <div class="form-group">
+                <label for="bandname">Band Name</label>
+                <input type="text" class="form-control" id="bandname">
+            </div>
+           <div class="form-group">
+                <label for="website">Website</label>
+                <input type="text" class="form-control" id="website">
+            </div>
+            <div class="form-group">
+                <label for="bestsong">Best Song</label>
+                <input type="text" class="form-control" id="bestsong">
+            </div>
+            <button type="submit" class="btn btn-success">Add Band</button>
+        </form>
+
 
     	</div>
         <div class="container">
